@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nova</title>
+    <style>
+        body { width: 300px; padding: 10px; font-family: monospace; }
+        .log-entry { 
+            border-bottom: 1px solid #ddd; 
+            padding: 5px 0; 
+            font-size: 11px; 
+            white-space: pre-wrap; 
+        }
+        .header { font-weight: bold; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Nova <span style="font-size: 10px; color: #666; font-weight: normal;">1.2</span>
+        <div id="status" style="font-size: 10px; color: #666; font-weight: normal; margin-top: 2px;">
+            Server: <span id="status-text">Checking...</span>
+        </div>
+    </div>
+    <div id="logs"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
